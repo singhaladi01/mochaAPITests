@@ -1,0 +1,18 @@
+{
+  "name": "thingSpeak_smoke_tests",
+  "version": "1.0.0",
+  "description": "API testing Mocha and Chai",
+  "author": "",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "supertest": "^4.0.2",
+    "mochawesome": "^4.0.1"
+  },
+  "scripts": {
+    "prestart": "npm install;",
+    "test": "mocha --reporter mochawesome test/channelsAPI_test.js"
+  },
+  "keywords": [],
+  "license": "ISC"
+}
