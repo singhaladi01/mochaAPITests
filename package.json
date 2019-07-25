@@ -8,10 +8,12 @@
     "mocha": "^6.1.4",
     "supertest": "^4.0.2",
     "mochawesome": "^4.0.1",
-    "mocha-teamcity-reporter": ">=2.0.0"
+    "mocha-teamcity-reporter": ">=2.0.0",
+    "mocha-multi-reporters": "^1.1.7",
+    "dotenv": "^8.0.0"
   },
   "scripts": {
-    "prestart": "npm install;",
+    "prestart": "npm install",
     "test": "mocha --reporter mocha-teamcity-reporter test/channelsAPI_test.js"
   },
   "keywords": [],

@@ -1,7 +1,11 @@
+
+require('dotenv').config({path: 'C:\\Users\\aagarwal\\mochaAPITests\\config\\enVariables.env'});
+
+var ENV = process.env.ENVIRONMENT;
 var should = require('chai').should(),
     expect = require('chai').expect,
     supertest = require('supertest'),
-    api=supertest('https://staging-api.thingspeak.com');
+    api=supertest('https://'+ENV+'-api.thingspeak.com');
 
 describe('Channel',function() {
 
