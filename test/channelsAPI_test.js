@@ -18,5 +18,7 @@ describe('Channel',function() {
                 expect(res.body.role).to.not.equal(null);
                 done();
             });
+        console.log(ENV);
+        console.log('https://'+ENV+'-api.thingspeak.com');
     });
 });
